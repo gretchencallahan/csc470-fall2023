@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject treePrefab;
     public GameObject squirrelPrefab;
     public GameObject benchPrefab;
-    //public GameObject sparklePrefab;
+    public GameObject sparklePrefab;
     
     public TMP_Text winText;
     public TMP_Text moneyText;
@@ -142,7 +142,7 @@ public class GameManager : MonoBehaviour
             winText.text = "Game over!";
             //particleSystem.Emit();
             //particleSystem.Play();
-            //GameObject sparkle = Instantiate(sparklePrefab, canvas.transform.position, Quaternion.identity);
+            GameObject sparkle = Instantiate(sparklePrefab, canvas.transform.position, Quaternion.identity);
             //Destroy(sparkle, 8);
         }
     }
