@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3699760368248635684}
   - component: {fileID: 4204980439543890211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Apartment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 7126148800806344542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9169626, y: 0, z: 3.5673618}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ad5777135ad4ec98238fd51dcb058c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selected: 0
+  thisObj: {fileID: 7126148800806344542}
 --- !u!1001 &4400930077148708738
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,6 +58,10 @@ PrefabInstance:
     - target: {fileID: 2361375959846782999, guid: 6312f4f191e1846a6aa94424ac66e5d5, type: 3}
       propertyPath: m_Name
       value: ApartmentModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361375959846782999, guid: 6312f4f191e1846a6aa94424ac66e5d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3138615590955045549, guid: 6312f4f191e1846a6aa94424ac66e5d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -96,6 +102,10 @@ PrefabInstance:
     - target: {fileID: 3138615590955045549, guid: 6312f4f191e1846a6aa94424ac66e5d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8348033544768587075, guid: 6312f4f191e1846a6aa94424ac66e5d5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

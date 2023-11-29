@@ -123,81 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &59654769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 59654770}
-  - component: {fileID: 59654772}
-  - component: {fileID: 59654771}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &59654770
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59654769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2390485, y: 0.4281427, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1849923032}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 218.7, y: 188}
-  m_SizeDelta: {x: -632, y: -336}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &59654771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59654769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &59654772
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59654769}
-  m_CullTransparentMesh: 1
 --- !u!1 &131730666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,23 +1442,23 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'press keys 1-8 for objects:
 
-    1 - road
+    1 - road 5$
 
-    2 - house
+    2 - house 20$
 
-    3 - apartment
-    building
+    3
+    - apartment building 25$
 
-    4 - bakery/shop
+    4 - bakery/shop 15$
 
-    5 - gazebo
+    5 - gazebo 15$
 
-    6 - tree
+    6
+    - tree 10$
 
-    7 - bench
+    7 - bench 5$
 
-    8
-    - squirrel'
+    8 - squirrel 5$'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1641,7 +1566,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectPool: []
   character: {fileID: 3710286757836345153, guid: 032d53d8a772c47938bab01da85b2830, type: 3}
-  canvas: {fileID: 1849923028}
   roadPrefab: {fileID: 6329306856732879369, guid: 5e439cc2b90b5454f8d7d3015bf10f8b, type: 3}
   housePrefab: {fileID: 5751393361044201040, guid: 7523930395ea04c0ca6da439a965e69c, type: 3}
   aptPrefab: {fileID: 7126148800806344542, guid: e00951d0efb714524810946ead89378b, type: 3}
@@ -1728,15 +1652,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Construction key controls:
 
-    A - rotate object to the left
-
-    D -
-    rotate object to the right
-
     click mouse - place object
 
-    click + delete
-    - delete object'
+    click
+    + Q - rotate object to the left
+
+    click + E - rotate object to the right
+
+    click
+    + delete - delete object'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2290,8 +2214,6 @@ RectTransform:
   - {fileID: 1506264512}
   - {fileID: 307193611}
   - {fileID: 969366722}
-  - {fileID: 59654770}
-  - {fileID: 1979277962}
   - {fileID: 131730667}
   - {fileID: 424449351}
   - {fileID: 303785795}
@@ -2307,81 +2229,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3510154984764281324, guid: 8b63d831ff9a1438cb0627a2c995a093, type: 3}
   m_PrefabInstance: {fileID: 177427747}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1979277961
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1979277962}
-  - component: {fileID: 1979277964}
-  - component: {fileID: 1979277963}
-  m_Layer: 5
-  m_Name: moneyBar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1979277962
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979277961}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 21.219982, y: 1.7405193, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1849923032}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 218.70001, y: 188}
-  m_SizeDelta: {x: -758, y: -420}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1979277963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979277961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9568628, g: 0.79215693, b: 0.20784315, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 0
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1979277964
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1979277961}
-  m_CullTransparentMesh: 1
 --- !u!1001 &3697584388470757256
 PrefabInstance:
   m_ObjectHideFlags: 0

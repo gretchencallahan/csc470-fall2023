@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 835653104677889488}
   - component: {fileID: 1547492357695508999}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Gazebo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3236757088806827343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.848335, y: 0, z: -24.1006}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ad5777135ad4ec98238fd51dcb058c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selected: 0
+  thisObj: {fileID: 3236757088806827343}
 --- !u!1001 &1253224265719605615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,6 +58,10 @@ PrefabInstance:
     - target: {fileID: 465823542436140505, guid: 21e0a8f8578a745c6a01cd4b283ab8a3, type: 3}
       propertyPath: m_Name
       value: GazeboModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 465823542436140505, guid: 21e0a8f8578a745c6a01cd4b283ab8a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 953954600595738467, guid: 21e0a8f8578a745c6a01cd4b283ab8a3, type: 3}
       propertyPath: m_LocalScale.x
@@ -108,6 +114,10 @@ PrefabInstance:
     - target: {fileID: 953954600595738467, guid: 21e0a8f8578a745c6a01cd4b283ab8a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8933800168454155520, guid: 21e0a8f8578a745c6a01cd4b283ab8a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
