@@ -1418,7 +1418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 69}
+  m_AnchoredPosition: {x: -133, y: 168}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1078542911
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 12.843658, y: 0, z: -135.94165, w: 0}
+  m_margin: {x: 12.843658, y: 0, z: -318.8576, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1628,7 +1628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -49.2}
+  m_AnchoredPosition: {x: 165, y: 192}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272899694
@@ -1653,13 +1653,17 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Construction key controls:
 
+
     click mouse - place object
+
 
     click
     + Q - rotate most recent object to the left
 
+
     click + E - rotate most recent
     object to the right
+
 
     click + delete - delete most recent object'
   m_isRightToLeft: 0
@@ -1724,7 +1728,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 10.066772, y: -17.15537, z: -155.46686, w: 0}
+  m_margin: {x: -69.71497, y: -17.15537, z: -224.35988, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1772,7 +1776,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 85.5}
+  m_AnchoredPosition: {x: -344, y: 208}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309368178
@@ -1797,12 +1801,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Character key contols:
 
+
     left arrow - rotate left
+
 
     right arrow
     - rotate right
 
+
     up arrow - move forward
+
 
     down arrow - move backwards'
   m_isRightToLeft: 0
@@ -1867,7 +1875,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 12.843658, y: 0, z: -135.94165, w: 0}
+  m_margin: {x: -35.101814, y: 0, z: -215.47057, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
