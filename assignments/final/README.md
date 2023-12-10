@@ -17,7 +17,8 @@ I plan on having a backtrack that plays on a loop, probably something soothing a
 Story/theme:
 The story of this game will be about a cat(your character) who has lost its friends. As you move and progress through the game you’ll find cat friends and be able to add them to your posse. Your overall goal will be to collect as many cat friends as you can, with a secondary goal of getting the high score—like in Crossy Roads.
 
-Sketches: Included as an image in the "final" directory.
+Sketches: ![finalProjSketches](https://github.com/gretchencallahan/csc470-fall2023/assets/98057945/ed0a55e3-4643-41e2-a0bd-27f117c5ee9b)
+
  
 Low-bar:
 My low-bar will be to get the main aspects of the game working and playable. You will be able to move your character and avoid projectile objects. There will be a finite amount of “streets” to cross, and when you get to the end of them you win. When the game ends(if you die or if you win) you are sent to an endgame screen.
