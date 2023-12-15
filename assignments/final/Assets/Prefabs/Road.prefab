@@ -71,6 +71,7 @@ MonoBehaviour:
   car4Prefab: {fileID: 1485658170108518516, guid: f2364208fc1fd45fd9facef5ffb3b23b, type: 3}
   car5Prefab: {fileID: 4576762364107308697, guid: 31406e7ec35694ff1831142562c2c1ef, type: 3}
   car6Prefab: {fileID: 1077253767512550519, guid: eedea8cdd68844059b352958508931c6, type: 3}
+  kittyPrefab: {fileID: 4016045100090785163, guid: 64544ee12657d481f93a27eba373e451, type: 3}
   cars: []
 --- !u!1001 &12968318010237172
 PrefabInstance:
