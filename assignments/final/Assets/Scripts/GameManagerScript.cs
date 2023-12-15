@@ -59,7 +59,7 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        generateNewSection();
+        //generateNewSection();
 
         score = kitties.Count;
         scoreText.text = score.ToString();
@@ -97,10 +97,10 @@ public class GameManagerScript : MonoBehaviour
         {
             cc.transform.position = new Vector3(cc.transform.position.x, cc.transform.position.y, -199);
         }
-        //else if (cc.transform.position.z % 200 == 0)
-        //{
-        //    //generateNewSection();
-        //}
+        else if (cc.transform.position.z % 200 == 0)
+        {
+            generateNewSection();
+        }
        
 
         cameraObject.transform.position = catPrefab.transform.position + (-catPrefab.transform.forward * 17) + (Vector3.up * 12);
