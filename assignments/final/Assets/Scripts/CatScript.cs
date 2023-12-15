@@ -22,7 +22,12 @@ public class CatScript : MonoBehaviour
         {
             GameManagerScript.SharedInstance.endGame = true;
         }
+        if (other.CompareTag("kitty"))
+        {
+            this.transform.position += Vector3.up;
+        }
     }
+
 
     void boundMap() {
         if(this.transform.position.x < -99)
@@ -39,7 +44,7 @@ public class CatScript : MonoBehaviour
         }
         else if(this.transform.position.z > 199)
         {
-            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -99);
+            this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -199);
         }
     }
 

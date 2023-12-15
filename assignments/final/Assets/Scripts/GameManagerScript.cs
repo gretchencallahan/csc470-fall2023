@@ -131,7 +131,7 @@ public class GameManagerScript : MonoBehaviour
     {
         if (cc.transform.position.z % 170 == 0)
         {
-            Vector3 newPos = new Vector3(0, 0, cc.transform.position.z + 30);
+            Vector3 newPos = new Vector3(0, 0, cc.transform.position.z + 230);
             GameObject newGround = Instantiate(groundPrefab, newPos, Quaternion.identity);
             instantiateRoadsEtc(cc.transform.position.z);
         }
