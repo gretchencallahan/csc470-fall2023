@@ -23,22 +23,11 @@ public class RoadScript : MonoBehaviour
         cars.Add(car4Prefab);
         cars.Add(car5Prefab);
         cars.Add(car6Prefab);
-        //bool genOneGo = true;
-        //int genOneCount = 0;
-        //while (genOneGo == true){
-        //    if(genOneCount % 5 == 0){
-        //        StartCoroutine(generateCar());
-        //    }
-        //    genOneCount++;
-        //    if( genOneCount == 100){
-        //        genOneGo = false;    
-        //    }
-        //}
+
         StartCoroutine(generateMoreCars());
 
         Vector3 kittyPos = new Vector3(Random.Range(-95, 95), this.transform.position.y, this.transform.position.z);
         GameObject kitty = Instantiate(kittyPrefab, kittyPos, Quaternion.identity);
-        // GameManagerScript.SharedInstance.kitties.Add(kitty);
     }
 
     // Update is called once per frame
@@ -69,7 +58,7 @@ public class RoadScript : MonoBehaviour
         while (true)
         {
             StartCoroutine(generateCar());
-            int seconds = Random.Range(0, 5);
+            int seconds = Random.Range(0, 10);
             yield return new WaitForSeconds(seconds);
         }
     }

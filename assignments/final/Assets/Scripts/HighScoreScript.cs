@@ -14,9 +14,4 @@ public class HighScoreScript : MonoBehaviour
         endText.text = "You saved " + score + " kitties!";
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

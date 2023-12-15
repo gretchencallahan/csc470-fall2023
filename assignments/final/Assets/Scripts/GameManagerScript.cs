@@ -21,6 +21,7 @@ public class GameManagerScript : MonoBehaviour
     public List<GameObject> betweenRoadThings = new List<GameObject>();
     public List<GameObject> kitties = new List<GameObject>();
     public bool endGame = false;
+    public int newSection = 400;
 
     //int currentHighScore = PlayerPrefs.GetInt("highscore");
 
@@ -42,7 +43,7 @@ public class GameManagerScript : MonoBehaviour
         betweenRoadThings.Add(br2);
         betweenRoadThings.Add(br3);
 
-        for (int i = -18; i < 20; i+=1){
+        for (int i = 2; i < 40; i+=1){
             Vector3 pos = new Vector3(0, 0, i * 10);
             if (i % 2 == 0){
                 
@@ -96,6 +97,10 @@ public class GameManagerScript : MonoBehaviour
         {
             cc.transform.position = new Vector3(cc.transform.position.x, cc.transform.position.y, -199);
         }
+        //else if (cc.transform.position.z % 200 == 0)
+        //{
+        //    //generateNewSection();
+        //}
        
 
         cameraObject.transform.position = catPrefab.transform.position + (-catPrefab.transform.forward * 17) + (Vector3.up * 12);
@@ -108,12 +113,12 @@ public class GameManagerScript : MonoBehaviour
         }
     }
 
-    void instantiateRoadsEtc(float currentPos)
+    void instantiateRoadsEtc(Vector3 currentPos)
     {
-        for (int i = -18; i < 20; i += 1)
+        for (int i = 2; i < 40; i += 1)
         {
           
-            Vector3 pos = new Vector3(0, 0, currentPos + (i * 10));
+            Vector3 pos = currentPos + (Vector3.forward * 10);
             if (i % 2 == 0)
             {
 
@@ -127,18 +132,12 @@ public class GameManagerScript : MonoBehaviour
         }
     }
 
-    void generateNewSection()
+    public void generateNewSection()
     {
-        if (cc.transform.position.z % 170 == 0)
-        {
-            Vector3 newPos = new Vector3(0, 0, cc.transform.position.z + 230);
-            GameObject newGround = Instantiate(groundPrefab, newPos, Quaternion.identity);
-            instantiateRoadsEtc(cc.transform.position.z);
-        }
+      
+        Vector3 newPos = new Vector3(0, 0, newSection);
+        GameObject newGround = Instantiate(groundPrefab, newPos, Quaternion.identity);
+        instantiateRoadsEtc(newPos);
+        newSection += 400;
     }
 }
-
-
-
-// if the player's position is a certain mod then call generateSection function
-//thjis function will instantiate a new ground, new roads, and new inbetween things for this new section

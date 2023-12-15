@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: 36daa3b69241741768a9b17e106b0ff4
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/HighScoreScene.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 6aba7e9460f314a1cb1a33c47681b92d
+  - enabled: 1
+    path: Assets/Scenes/ControlsScene.unity
+    guid: e657f7f35d52c4367b4b35a3b3c91b4a
   m_configObjects: {}
