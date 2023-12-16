@@ -10,7 +10,7 @@ public class CatScript : MonoBehaviour
         {
             GameManagerScript.SharedInstance.endGame = true;
         }
-        if (other.CompareTag("newSection"))
+        else if (other.CompareTag("newSection"))
         {
             GameManagerScript.SharedInstance.generateNewSection();
         }

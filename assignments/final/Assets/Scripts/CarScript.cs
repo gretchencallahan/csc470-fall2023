@@ -11,5 +11,9 @@ public class CarScript : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.CompareTag("Cat"))
+        {
+            GameManagerScript.SharedInstance.endGame = true;
+        }
     }
 }
